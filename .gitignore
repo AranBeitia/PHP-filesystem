@@ -22,4 +22,4 @@ Homestead.json
 /.vagrant
 .phpunit.result.cache
 
-.DS_Storage
+.DS_Store
