@@ -1,50 +1,12 @@
-<?php
-/**
- *  magic constants
- */
-
-echo __DIR__ . '<br/>';
-echo __FILE__ . '<br/>';
-
-/**
- * create directory
- */
-
- $path = './test';
- $dir = $path . '/ts/';
- if(!file_exists($dir)) {
-	 mkdir($dir);
- }
-
- /**
-	* rename directory
-  */
-
-	if(file_exists($dir)) {
-		rename($dir, $path . '/my_root');
-	}
-
-	/**
-	 * read files and folders
-	 */
-
-	 $files = scandir('./');
-	 echo '<pre>';
-	 var_dump($files);
-	 echo '</pre>';
-
-	 /**
-		* get content of a file
-	  */
-
-		echo file_get_contents('text.txt'); 
-
-		/**
-		 * modify content
-		 */
-		//file_put_contents('text.txt', 'hi'); // this overwrites the content before
-
-		$content = file_get_contents('text.txt');
-		file_put_contents('text.txt', '<br />Hello'.PHP_EOL . $content. "\n", FILE_APPEND);
-
-		// file_put_contents('ids.txt', implode("\n", $gemList) . "\n", FILE_APPEND);
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>File system</title>
+</head>
+<body>
+	
+</body>
+</html>
