@@ -22,7 +22,6 @@ echo __FILE__ . '<br/>';
 
 	if(file_exists($dir)) {
 		rename($dir, $path . '/my_root');
-
 	}
 
 	/**
@@ -43,7 +42,9 @@ echo __FILE__ . '<br/>';
 		/**
 		 * modify content
 		 */
-		file_put_contents('text.txt', 'hi'); // this overwrites the content before
+		//file_put_contents('text.txt', 'hi'); // this overwrites the content before
 
 		$content = file_get_contents('text.txt');
-		file_put_contents('text.txt', 'Hello kitty'.PHP_EOL . $content);
+		file_put_contents('text.txt', '<br />Hello'.PHP_EOL . $content. "\n", FILE_APPEND);
+
+		// file_put_contents('ids.txt', implode("\n", $gemList) . "\n", FILE_APPEND);
