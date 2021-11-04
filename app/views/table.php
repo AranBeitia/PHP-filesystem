@@ -1,5 +1,5 @@
 <div class="table-responsive">
-	<table id="table_id" class="table table-dark table-striped table-bordered">
+	<table id="table_files" class="table table-dark table-striped table-bordered">
 		<thead>
 			<tr>
 				<th>File</th>
@@ -9,7 +9,7 @@
 				<th>Delete</th>
 			</tr>
 		</thead>
-		<tbody>
+		<!-- <tbody>
 			<tr>
 				<td>Daniii</td>
 				<td>holaa</td>
@@ -24,6 +24,6 @@
 				<td>Row 2 Data 2</td>
 				<td>Row 2 Data 2</td>
 			</tr>
-		</tbody>
+		</tbody> -->
 	</table>
 </div>
